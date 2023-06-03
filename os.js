@@ -1,5 +1,6 @@
 const os=require('os')
-console.log(os.tmpdir())
+exports.osModule=()=>{
+  console.log(os.tmpdir())
 
 console.log(os.endianness());
 
@@ -20,3 +21,5 @@ console.log(os.networkInterfaces());
 
 console.log(os.totalmem());
 console.log(os.freemem());
+}
+
